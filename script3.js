@@ -793,12 +793,19 @@
 //Вот документ с таблицей и формой.
 // Как найти?…
 // 1. Таблицу с id="age-table".
-let table = document.getElementById("age-table"); // обязательно обращаемся к "document", когда используем метод "getElementById"
-console.log(table)
-// 2. Все элементы label внутри этой таблицы (их три).
-let elements = document.querySelectorAll("lable"); // ??? почему внутри скобок нельзя поставить lable
-console.log(table)
-// 3. Первый td в этой таблице (со словом «Age»).
-let table1 = document.querySelector(".td") // ???
+// let table = document.getElementById("age-table"); // обязательно обращаемся к "document", когда используем метод "getElementById"
+// console.log(table)
+// // // 2. Все элементы label внутри этой таблицы (их три).
+// let elements = document.querySelectorAll("lable"); // ??? почему внутри скобок нельзя поставить lable
+// console.log(table)
+// // // 3. Первый td в этой таблице (со словом «Age»).
+// let table1 = document.querySelector(".td") // ???
 
+// д/з на 26.09.23
+
+const btn = document.querySelector('#btn')
+btn.addEventListener('click', () => {
+    btn.classList.add('hide')
+    console.log(btn)
+})
 
